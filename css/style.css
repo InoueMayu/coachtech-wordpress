@@ -1,0 +1,173 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: #707070;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.common__ttl {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  color: #808080;
+}
+
+.common__sub-ttl {
+  font-size: 16px;
+  font-family: "Indie Flower", cursive;
+  color: #b31566;
+}
+
+header img {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.header__nav {
+  text-align: center;
+}
+
+.header__nav ul {
+  margin: 20px auto;
+}
+
+.header__nav li {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.nav__list {
+  margin-left: 50px;
+}
+
+.header__nav a {
+  color: #808080;
+}
+
+.firstview {
+  background:url(../img/media__firstview.png) no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+
+.firstview__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  width: 80%;
+  font-family: "Indie Flower", cursive;
+}
+
+.firstview__content h1 {
+  font-size: 60px;
+}
+
+#blog {
+  margin-top: 80px;
+  padding: 40px 0;
+  width: 60%;
+}
+
+.blog-wrap {
+  margin-top: 10px;
+
+}
+
+.blog-wrap__item {
+  width: 30%;
+  position: relative;
+  display: block;
+}
+
+
+.blog_flex__item {
+  display: flex;
+  padding: 0;
+}
+
+.tag {
+  margin-left: auto;
+}
+
+.blog-wrap__item-content {
+  background: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 20px;
+  margin-top: -7px;
+}
+
+.blog-wrap__item-content-ttl {
+  font-size: 16px;
+}
+
+.blog-wrap__item-eyecatch {
+  border-radius: 15px 15px 0 0;
+}
+
+.blog-wrap__item-cat {
+  position: absolute;
+  top: 0;
+  left: 11px;
+  background: #b31566;
+  color: #fff;
+  border-radius: 15px 0 0 0;
+  padding: 5px 20px;
+}
+
+.blog-wrap__item-content-tag {
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.blog__link {
+  display: block;
+  margin: 30px auto 0;
+  width: 200px;
+  text-align: center;
+  padding: 15px 0;
+  background: #fff;
+  border: 2px solid #b31566;
+  border-radius: 30px;
+  color: #b31566;
+  transition: 0.4s;
+}
+
+.blog__link:hover {
+  background: #b31566;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.flex__item {
+  display: flex;
+}
+
+
+
+.footer {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 15px;
+  margin-top: 80px;
+  background: #fff;
+  color: #808080;
+}
+
+.wrap {
+  display: flex;
+}
+
