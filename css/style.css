@@ -78,6 +78,7 @@ header img {
   margin-top: 80px;
   padding: 40px 0;
   width: 60%;
+  display: flex;
 }
 
 .blog-wrap {
@@ -165,9 +166,5 @@ header img {
   margin-top: 80px;
   background: #fff;
   color: #808080;
-}
-
-.wrap {
-  display: flex;
 }
 
