@@ -1,4 +1,5 @@
 <style>
+
 .sidebar {
   width: 30%;
 }
@@ -32,6 +33,7 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    color: #707070;
 }
 
 .contributor h2 {
@@ -42,11 +44,14 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    text-align: center;
+    color: #707070;
 }
 
 .category__ttl {
   font-size: 22px;
   margin-bottom: 20px;
+  color: #707070;
 }
 
 .category__link {
@@ -80,9 +85,18 @@ li {
     background:url(<?php echo get_template_directory_uri(); ?>/img/arrow.svg) no-repeat;
     background-size: cover;
 }
+
+@media screen and (max-width: 768px){
+  .sidebar {
+    width: 100%;
+    margin-top: 100px;
+    border-top: 1px solid #707070;
+    padding-top: 100px;
+  }
+}
 </style>
 
-<aside class="sidebar">
+<aside class="sidebar container">
   <div class="banner">
     <a href="https://coachtech.site/">
       <img src="<?php echo get_template_directory_uri(); ?>/img/banner.png" alt="">
@@ -94,17 +108,17 @@ li {
       <img src="<?php echo get_template_directory_uri(); ?>/img/estramedia__logo.png" alt="">
     </div>
     <h2>エストラ編集部</h2>
-    <p>プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。</p>
+    <p>プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。プロフィール文が入ります。</p>
   </div>
 
   <div class="category">
     <h2 class="category__ttl">Category</h2>
     <ul>
-      <li><a class="category__link" href="">HTML</a></li>
-      <li><a class="category__link" href="">CSS</a></li>
-      <li><a class="category__link" href="">JavaScript</a></li>
-      <li><a class="category__link" href="">PHP</a></li>
-      <li><a class="category__link" href="">MySQL</a></li>
+      <li><a class="category__link" href="<?php echo get_category_link( 7 ); ?>">HTML</a></li>
+      <li><a class="category__link" href="<?php echo get_category_link( 6 ); ?>">CSS</a></li>
+      <li><a class="category__link" href="<?php echo get_category_link( 5 ); ?>">JavaScript</a></li>
+      <li><a class="category__link" href="<?php echo get_category_link( 4 ); ?>">PHP</a></li>
+      <li><a class="category__link" href="<?php echo get_category_link( 3 ); ?>">MySQL</a></li>
     </ul>
   </div>
 </aside>
