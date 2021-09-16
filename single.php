@@ -78,12 +78,21 @@
 
       $tag = get_the_tags();
       $tag_name = $tag[0]->name;
-    ?>
 
+    ?>
+  
   <header class="masthead container single__header" id="single__header">
   <div class="cat-name">
-  <span class="single__item-cat"><?php echo $cat_name; ?></span>
+  <span class="single__item-cat">
+    <?php
+      $category = get_the_category();
+      if ( $category[0] ) {
+      echo '<a href="' . get_category_link( $category[0]->term_id ) . '">' . $category[0]->cat_name . '</a>';
+        }
+    ?>
+  </span>
   </div>
+
   <h1 class="single-title">
           <?php the_title(); ?>
   </h1>
